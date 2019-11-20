@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.body {
+    background-color: #009997;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #ffffffc9;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 150px;
+}
+
+.log {
+    width: 25px;
+}
+
+.row {
+    margin-top: 150px;
+}

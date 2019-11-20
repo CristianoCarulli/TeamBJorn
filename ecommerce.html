@@ -1,0 +1,1244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/ecommerce.css">
+    <link rel="stylesheet" href="css/stylePhone.css">
+
+    <script src="https://kit.fontawesome.com/fbc0b169a8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js"></script>
+    <link rel="icon" href="images/logo/logo.ico" />
+    <title>E-commerce</title>
+</head>
+
+<body class="body">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navb">
+        <a href="index.html" class="navbar-brand"><img src="images/logo/logo.png" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+            <div class="nav navbar-nav ml-auto">
+                <a class="nav-link" href="index.html#home">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html#servizi">SERVIZI</a>
+                <a class="nav-link" href="index.html#chisiamo">CHI SIAMO</a>
+                <a class="nav-link">E-COMMERCE</a>
+                <a class="nav-link" href="#contattaci">CONTATTI</a>
+                <a class="nav-link" href="#">
+                    <img src="https://img.icons8.com/ios/50/000000/login-rounded.png" class="log" data-toggle="modal" data-target="#modal">
+                </a>
+                <button type="button" class="btn btn-primary-1">
+                        <i class="fas fa-cart-arrow-down"></i> <span class="badge badge-light carrellone">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="username">
+
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <input type="button" class="btn btn-primary" value="Login">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fine Navbar -->
+    <div class="container XD">
+        <div class="row">
+            <div class="col-md-12 xdd">
+                <select class=" ff custom-select custom-select-lg mb-3" id="selectItem">
+                    <option selected="selected" id="tutto">Seleziona la categoria</option>
+                    <option id="rete">Reti</option>
+                    <option id="sicurezza">Sicurezza</option>
+                    <option id="servizio">Servizi</option>
+                </select>
+            </div>
+            <section class="reti">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#reti1img"><img class="card-immag" src="images/reti/1.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Router Asus
+                            </p>
+                            <hr>
+                            <p class="descrizione">Velocità e copertura Wi-Fi imbattibili grazie alla tecnologia NitroQAM ed alla CPU da 1.8GHz dual-core L'acceleratore di gioco WTFast e il QoS adattivo assicurano l'esperienza di gioco definitiva Massima copertura grazie alle
+                                antenne ad alto guadagno.
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#reti1" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6  bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reti">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#reti2img"><img class="card-immag" src="images/reti/2.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Switch Tp-link
+                            </p>
+                            <hr>
+                            <p class="descrizione">16 porte RJ45 10/100/1000Mbps Auto-MDI/MDIX per negoziazione automatica della velocità Risparmio energetico con tecnologia Green Ethernet IEEE 802.3x Flow Control per un trasferimento dati ottimale Scocca in acciaio dal design
+                                versatile per posizionamento desktop o a parete Supporta QoS 802.1p/DSCP e funzione IGMP Snooping Nessuna configurazione richiesta, installazione rapida Plug & Play
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#reti2" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reti">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#reti3img"><img class="card-immag" src="images/reti/3.png" style="width: 100%;"></a>
+                        <div class="card-body">
+                            <p class="titolo">Wifi Extender
+                            </p>
+                            <hr>
+                            <p class="descrizione">Amplifica il segnale Wi-Fi ad aree non raggiunte dalla copertura del router La presenza di due antenne esterne che lo distingue dal modello TL-WA850RE, fornisce una copertura Wi-Fi migliore
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#reti3" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reti">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#reti4img"><img class="card-immag" src="images/reti/4.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Armadio Rack
+                            </p>
+                            <hr>
+                            <p class="descrizione">LK1927U66GR Armadio Rack 19" 27U 1388, 600, Grigio Porta posteriore in metallo pieno con serratura In lamiera d'acciaio con una forte capacità di carico, verniciata a polvere Sezioni laterali removibili con chiusura a chiave
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#reti4" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="sicurezzA">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#sicurezza1img"><img class="card-immag" src="images/sicurezza/1.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Antifurto Filare
+                            </p>
+                            <hr>
+                            <p class="descrizione">Centrale Filare E Wireless Nice HSCU1GC Con Combinatore GSM E PSTN Con Kit Antifurto Filare E Hscu Front 31 Con Kit Antifurto Filare E 1604x1907px
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#sicurezza1" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sicurezzA">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#sicurezza2img"><img class="card-immag" src="images/sicurezza/2.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Impianto TVCC
+                            </p>
+                            <hr>
+                            <p class="descrizione">Telecamera Day & Night, risoluzione 3 Mpx, sensore da 1/3in, filtro IR meccanico, obiettivo fuoco fisso 2,8 mm, funzione CsC, sensibilità 0 lux (IR in ON), grado di protezione IP66, illuminatore IR con portata fino a 20 m,
+                                Smart-IR. Funzioni automatiche: BLC, 2DNR, AGC, WHITE_BAL, D-WDR. Alimentazione 12 Vdc 150 mA. Dimensioni 70(H) x 94(Ø) mm.
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#sicurezza2" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sicurezzA">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#sicurezza3img"><img class="card-immag" src="images/sicurezza/3.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Arlo Telecamere
+                            </p>
+                            <hr>
+                            <p class="descrizione">
+                                Arlo Pro2 VMS4430P-100EUS Kit Base Sistema di Videosorveglianza Wi-Fi con 4 Telecamere di Sicurezza, Audio 2 Vie, Batteria, Full HD, Visione Notturna, Interno/Esterno, Vcr Opz, Alexa e Google Wi-Fi
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#sicurezza3" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sicurezzA">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#sicurezza4img"><img class="card-immag" src="images/sicurezza/4.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Kit Allarme
+                            </p>
+                            <hr>
+                            <p class="descrizione">
+
+                                WiFi 2.4 Ghz, Combinatore telefonico GSM, 100 zone di allarme, App Gratuita, Sicurezza per la casa, ufficio, negozio, Bianco
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#sicurezza4" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="servizi">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#servizio1img"><img class="card-immag" src="images/servizi/1.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Assistenza Remota
+                            </p>
+                            <hr>
+                            <p class="descrizione">Per offrire assistenza rapida e ridurre i tempi di intervento proponiamo il servizio di assistenza tecnica da remoto. I nostri tecnici potranno accedere al vostro computer come se fossero seduti di fronte al vostro monitor
+                                grazie alla nuova piattaforma tecnologica per l’assistenza online da remoto.
+
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#servizi1" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="servizi">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#servizio2img"><img class="card-immag" src="images/servizi/2.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Assistenza Allarme
+                            </p>
+                            <hr>
+                            <p class="descrizione">Ti mettiamo a disposizione un servizio di assistenza telefonica che risponde tutti i giorni dell’anno, 24 ORE SU 24
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#servizi2" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="servizi">
+                <div class="col-md-4 ">
+                    <div class="card" style="width: 18rem;">
+                        <a data-toggle="modal" data-target="#servizio3img"><img class="card-immag" src="images/servizi/3.jpg"></a>
+                        <div class="card-body">
+                            <p class="titolo">Assistenza 24 / 24 H
+                            </p>
+                            <hr>
+                            <p class="descrizione">Offriamo a tutti i nostri cliente assistenza alla prima installazione dell'impianto di videosorveglianza o per qualunque altro problema.
+                                <hr>
+                                <div class="costo" style="align-self: center;"> 350,00 €</div>
+                            </p>
+                            <div class="row bottoni">
+                                <div class="col-md-6 bot">
+                                    <a data-toggle="modal" data-target="#servizi3" class="btn btn-primary" style="color:white;">Maggiori dettagli</a>
+                                </div>
+                                <div class="col-md-6 bot">
+                                    <a class="btn btn-primary carrello">Aggiungi al carrello</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div id="reti1" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Router Gaming WiFi Dual Band Gigabit AC2900 con MU-MIMO, AiMesh per sistemi wi-fi a maglie, sicurezza di rete AiProtection by Trend Micro, WTFast e QoS adattativo.
+                            </div>
+                            <hr>
+                            <div class="prodotto">
+                                <span class="testoC">Esperienza gaming definitive - WTFast integrato</span> per aumentare la velocità dei tuoi giochi e QoS adattativo per permettere un’esperienza gaming e streaming 4K UHD senza lag;<br><span class="testoC"> Wi-Fi AC2900 ad altissima velocità con tecnologie NitroQAM e Quad-Stream</span>                                5GHz per gestire senza esitazioni ogni evenienza di rete, anche le più complesse; <br><span class="testoC">Massima copertura di rete</span> – antenne ad alte prestazioni, ASUS AiRadar e Range Boost aiutano ad eliminare
+                                i punti morti, mentre MU-MIMO massimizza le performance durante l’uso con molti dispositive connessi;<br><span class="testoC"> Processore ad alte prestazioni</span> – godi dell’esperienza di rete permessa di un processore
+                                dual-core da 1.8GHz a 64 bit;<br><span class="testoC">Sicurezza di grado commerciale </span>– AiProtection, powered by Trend Micro, blocca e neutralizza le minacce per la sicurezza web di tutti i dispositivi connessi;<br>
+                                <span class="testoC">Supporto AiMesh</span> – collega l’RT-AC86U ad altri router ASUS compatibili per creare una rete Wi-Fi in grado di coprire l’intera abitazione.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti2" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Switch TP-Link TL-SG116 </div>
+                            <hr>
+                            <div class="prodotto">
+                                Lo Switch TP-Link a 16 porte 10/100/1000Mbps consente un passaggio semplice e immediato al Gigabit Ethernet, aumentando considerevolmente la velocità del tuo server e l'efficacia delle connessioni dorsali tra i dispositivi. TL-SG116 si installa in modo
+                                intuitivo e rappresenta una scelta eco-friendly per la casa e per l'ufficio, grazie all'innovativa tecnologia a risparmio energetico che limita significativamente le dispersioni. È la scelta Green per il tuo network Gigabit.
+                                Questa nuova generazione di Switch Desktop è infatti dotata di un'innovativa tecnologia a risparmio energetico che ti permetterà di aumentare significativamente la capacità del tuo network con un minor consumo di energia.
+                                TL-SG116 regola automaticamente i consumi in base alle connessioni attive e alla lunghezza del cavo, limitando l'emissione di CO2.
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti3" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Wifi Range Extender Wireless 300mbps Tp-Link Tl-WA850RE </div>
+                            <hr>
+                            <div class="prodotto">
+                                <span class="testoC">Velocità wireless</span> fino a 300Mbps per streaming video ed online gaming
+                                <br><span class="testoC">Modalità Range Extender</span> - Incrementa il segnale wireless in aree prima inaccessibili o difficili da raggiungere
+                                <br><span class="testoC">   Tasto RE</span> - Impostazione della crittografia wireless rapida e intuitiva
+                                <br> <span class="testoC">      Porta LAN </span>- Per la connessione dei dispositivi Ethernet
+                                <br> <span class="testoC">    Tether App </span>- Per gestione semplice via smartphone e tablet
+                                <br> <span class="testoC">     Smart LED </span>- Posizionamento rapido grazie al segnale LED
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti4" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                LK1927U66GR Armadio Rack 19" 27U 1388, 600, Grigio </div>
+                            <hr>
+                            <div class="prodotto">
+                                Armadio rack per reti, specifici per alloggiare componenti attivi e passivi per reti 19". Sono inclusi sia i piedini regolabili in altezza, sia le ruote. L'armadio è fissato su un bancale con dei blocchi per rendere più sicuro il trasporto e proteggere
+                                i piedini durante il trasporto. In lamiera d'acciaio con una forte capacità di carico, verniciata a polvere. L'armadio è disassemblabile con la chiave a brugola inclusa, nel caso debba essere smontato in tutto o in parte
+                                per agevolare il trasporto, lo schema per il rimontaggio è incluso. Porta frontale in vetro di sicurezza in struttura di acciaio con chiusura a chiave con serratura a maniglia. La porta anteriore e quello posteriore sono
+                                reversibili, in modo da poter avere l'apertura a destra o a sinistra a seconda delle esigenze. Porta posteriore in metallo pieno con serratura. Sezioni laterali removibili con chiusura a chiave. 4 Montanti da 19" anteriori
+                                e posteriori regolabili in profondità. In ogni montante l'unità è numerata, per semplificare il montaggio dei componenti. Possibilità di ingresso dei cavi di rete dall'alto dell'armadio o dal basamento. Il basamento ha
+                                7 aperture richiudibili per l'accesso dei cavi da diverse posizioni Incluso 20 kit di viti per il montaggio dei dispositivi e messa a terra. Tetto predisposto per unità di ventilazione, e lungo i bordi superiori e inferiori
+                                dell'armadio sono posizionate delle fessure per la ventilazione passiva. Ampia gamma di accessori disponibili. Capacità di carico 800 kg. Colore: grigio chiaro, RAL7035.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza1" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Centrale Filare E Wireless Nice HSCU1GC </div>
+                            <hr>
+                            <div class="prodotto">
+                                Controllo remoto: GSM + PSTN. Tutto sotto controllo, anche da lontano, via PSTN e GSM. Programmazione rapida e semplice. 9,5 cm touchscreen wireless con icone e intuitivi menu di guida vocale integrata. Anche in caso di blackout, viene garantita la certezza
+                                di funzionamento in assenza di alimentazione. bidirezionale Dual band. Tranquillità, sempre: sistema supervisionato, bidirezionale con tastiera, telecomandi e sirene, dual band 433 e 868 MHz, autodiagnosi. Un unico comando
+                                per tutta la casa. Gestione integrata dei sistemi di allarme e automazione della tua casa con il nuovo touch screen portatile, completamente wireless. Facile da installare. Touch screen parlante per avvisi personalizzabili
+                                e guida vocale. Domotica semplice. Possibilità di gestire automazioni singole e a gruppi, scenari, comandi temporizzati. Kit composto da: N ° 1 centrale HSCU2GC N ° 1 tastiera touchscreen HSTS2 N ° 1 telecomando HSTX4 N
+                                ° 1 contatto HSDID11 N ° 1 Rev. volumetrico HSDIM10 La centrale HSCU è la soluzione più completa per l’installazione di sistemi di allarme residenziali, integrati da funzioni anti-pericolo e di gestione delle automazioni.
+                                La trasmissione radio Dual Band supervisionata e il controllo delle interferenze radio rendono sicure le comunicazioni fra centrale, rivelatori e mezzi di allarme. La gestione totale e differenziata degli allarmi segnala
+                                in modo diverso tentativi di avvicinamento, forzature o scasso degli inﬁssi, intrusione in locali protetti, principi di incendio o allagamento ed altri eventi pericolosi. In caso di allarme la centrale chiama i numeri telefonici
+                                programmati trasmettendo messaggi.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza2" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Impianto TVCC </div>
+                            <hr>
+                            <div class="prodotto">
+                                Telecamera Bullet IP a colori Day & Night, risoluzione 3 Mpx (2048x1536), obiettivo fuoco fisso 3,6 mm, filtro IR meccanico, H.264 Multistream, alimentazione PoE o 12 Vdc, IR 30 m, funzioni WDR, ROI e 3DNR, Smart IR, RTSP, protocollo ONVIF, grado di protezione
+                                IP66. Dimensioni: 87x87x219 mm. Peso 635 g </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza3" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Telecamere di Videosorveglianza </div>
+                            <hr>
+                            <div class="prodotto">
+                                Primo sistema di videosorveglianza Wireless a batterie con qualità video Full HD. Impermeabili e resistenti alle intemperie, sono dotate di audio bidirezionale, angolo di visione di 130° e infrarossi per la visione notturna. Opzione di alimentazione via
+                                cavo, consente di personalizzare gli alert in base a specifiche zone di attività e di catturare l'attività fino a 3 secondi prima dell'evento. Sirena integrata nella base station che si attiva in base ai movimenti rilevati
+                                oppure da remoto tramite app. Archiviazione su Cloud gratuita per 7 giorni consecutivi, opzione di registrazione continuativa su Cloud se collegate alla corrente, opzione backup locale tramite porta USB della base station.
+                                Tutti i sistemi di sicurezza Arlo Wireless, Arlo Q e Arlo Go sono compatibili e integrabili fra di loro. Funziona con le Arlo Smart Home Security Lights: ALS1101, ALS1102, ALS1103 Arlo Smart potenza ed intelligenza alle
+                                tue videocamere: avvisi personalizzati per rilevare persone, zone specifiche e chiamate ai tuoi numeri preferiti direttamente dallo schermo di blocco dello smartphone (servizio opzionale, include 1 mese di prova). Campo
+                                visivo 130 gradi.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza4" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Kit Sistema allarme casa wireless </div>
+                            <hr>
+                            <div class="prodotto">
+                                Un Allarme Intelligente con Combinatore Telefonico GSM Senza fili e senza opere di installazione Combinatore Telefonico GSM (Micro Sim non inclusa), tastiera touch, display TFT 2.4" Si collega ad Internet col Tuo Wifi 2.4Ghz di Casa/Ufficio n. 1 Pannello
+                                di Allarme con batteria tampone n. 1 alimentatore per il Pannello n. 1 Sensore di movimento ambientale n. 1 Sensore porta/finestra n. 2 Telecomandi n. 2 Transponder RFID n. 1 Sirena filare 110 db n. 1 Guida Veloce in italiano
+                                n. Un Manuale completo in inglese (presto in italiano) Batterie incluse in ogni accessorio
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizi1" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Assistenza tecnica remota </div>
+                            <hr>
+                            <div class="prodotto">
+                                Per offrire assistenza rapida e ridurre i tempi di intervento proponiamo il servizio di assistenza tecnica da remoto. I nostri tecnici potranno accedere al vostro computer come se fossero seduti di fronte al vostro monitor grazie alla nuova piattaforma
+                                tecnologica per l’assistenza online da remoto.
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizi2" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Assistenza Impianti Di Allarme 24 Ore Su 24 </div>
+                            <hr>
+                            <div class="prodotto">
+                                Ti mettiamo a disposizione un servizio di assistenza telefonica che risponde tutti i giorni dell’anno, 24 ORE SU 24. </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizi3" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document" style="max-width: 900px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                              </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="titolo">
+                                Assistenza Impianti Di Videosorveglianza 24 Ore Su 24 </div>
+                            <hr>
+                            <div class="prodotto">
+                                Offriamo a tutti i nostri cliente assistenza alla prima installazione dell'impianto di videosorveglianza o per qualunque altro problema. </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti1img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/reti/1.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti2img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/reti/2.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti3img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/reti/3.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="reti4img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/reti/4.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza1img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sicurezza/1.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza2img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sicurezza/2.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza3img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sicurezza/3.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizio1img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/servizi/1.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizio2img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/servizi/2.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="servizio3img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/servizi/3.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sicurezza4img" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Dettagli</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/sicurezza/4.jpg" width="100%">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- inizio footer -->
+    <a name="contattaci"></a>
+    <div class="footer aasde">
+        <div class="container-footer">
+            <div class="row nav">
+                <div class="col-md-4 mappa mappaf">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.0695789396614!2d9.220058215124197!3d45.468402279101014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c68e5e0ef061%3A0xdc72984d9bac31cf!2sVia%20Gaspare%20Gozzi%2C%201%2C%2020129%20Milano%20MI!5e0!3m2!1sit!2sit!4v1571751075139!5m2!1sit!2sit"
+                        class="mappa" width="100%" height="100%" style="max-height: 570px !important;" frameborder="1"></iframe>
+                </div>
+                <div class="col-md-4 testo">
+                    <div id="orari">
+                        <p style="font-size: large; font-weight: bold; text-align:center; color: white;">
+                            <i class="far fa-clock"></i> Orari</p>
+                        <hr id=" linea ">
+                        <ul class="list-unstyled" style="color: white;">
+                            <li>Da Lunedì a Venerdì<br> 09:00 - 13:00 / 14:00 - 18:00</li>
+                            <li>Sabato e Domenica<br> Chiuso</li>
+                        </ul>
+                    </div><br>
+                    <div id="orari">
+                        <div class="row nav">
+                            <div class="col-md-12">
+                                <p style=" font-size: large; font-weight: bold; "><i class="fas fa-map-marker-alt "></i> Dove siamo</p>
+                                <hr> Via Gaspare Gozzi N°1, Milano
+                                <hr>
+                                <div class="row nav">
+                                    <div class="col-md-6 cont">
+                                        <p style="font-size: large; font-weight: bold; "><i class="far fa-address-book "></i></i> Contatti</p>
+                                    </div>
+                                    <div class="col-md-6 soc">
+                                        <div class="container-social ">
+                                            <div class="cube ">
+                                                <div class="plus ">
+                                                    <div class="plus-horizontal "></div>
+                                                    <div class="plus-vertical "></div>
+                                                </div>
+                                                <div class="quadrant ">
+                                                    <div class="quadrant__item ">
+                                                        <a href="https://twitter.com/enetworkssrl " target="_blank ">
+                                                            <div class="quadrant__item__content ">
+                                                                <svg enable-background="new 0 0 32 32 " height="26px " id="Layer_1 " version="1.0 " viewBox="0 0 32 32 " width="26px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink
+                                                                            " class="arrow-up "><path d="M31.993,6.077C30.816,6.6,29.552,6.953,28.223,7.11c1.355-0.812,2.396-2.098,2.887-3.63 c-1.269,0.751-2.673,1.299-4.168,1.592C25.744,3.797,24.038,3,22.149,3c-3.625,0-6.562,2.938-6.562,6.563 c0,0.514,0.057,1.016,0.169,1.496C10.301,10.785,5.465,8.172,2.227,4.201c-0.564,0.97-0.888,2.097-0.888,3.3
+                                                                            c0,2.278,1.159,4.286,2.919,5.464c-1.075-0.035-2.087-0.329-2.972-0.821c-0.001,0.027-0.001,0.056-0.001,0.082 c0,3.181,2.262,5.834,5.265,6.437c-0.55,0.149-1.13,0.23-1.729,0.23c-0.424,0-0.834-0.041-1.234-0.117 c0.834,2.606,3.259,4.504,6.13,4.558c-2.245,1.76-5.075,2.811-8.15,2.811c-0.53,0-1.053-0.031-1.566-0.092
+                                                                            C2.905,27.913,6.355,29,10.062,29c12.072,0,18.675-10.001,18.675-18.675c0-0.284-0.008-0.568-0.02-0.85 C30,8.55,31.112,7.395,31.993,6.077z " fill="#973928 "/><g/><g/><g/><g/><g/><g/></svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="quadrant__item ">
+                                                        <a href="https://it.linkedin.com/company/enetworks-srl" target="_blank ">
+                                                            <div class="quadrant__item__content linkedin">
+                                                                <svg enable-background="new 0 0 32 32" height="28px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="28px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="arrow-right"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" fill="#973928 "/></svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="quadrant__item ">
+                                                        <a href="https://instagram.com/enetworks_srl?igshid=1rmssn0b7bl7r " target="_blank ">
+                                                            <div class="quadrant__item__content instagram">
+                                                                <svg height="50px " id="Layer_1 " style="enable-background:new 0 0 56.693 56.693; " version="1.1 " viewBox="0 0 56.693 56.693 " width="50px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg
+                                                                    " xmlns:xlink="http://www.w3.org/1999/xlink " class="arrow-left "><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"fill="#973928 "/></svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="quadrant__item ">
+                                                        <a href="https://it-it.facebook.com/enetworkssrl " target="_blank ">
+                                                            <div class="quadrant__item__content ">
+                                                                <svg baseProfile="tiny " height="42px " id="Layer_1 " version="1.2 " viewBox="0 0 24 24 " width="42px " xml:space="preserve " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink
+                                                                    " class="arrow-down "><g><path d="M13,10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189,0.374-2.691,1.118-3.512C11.862,4.41,12.791,4,13.904,4H16v3h-2.1 C13.402,7,13,7.402,13,7.899V10z " fill="#973928 "/></g></svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row nav ">
+                            <div class="col-md-12 " style="text-align: center; ">
+                                <a href="tel:+390123456789 "><i class="fas fa-phone fa-1x "></i> +390123456789</a>
+                            </div>
+                        </div>
+                        <div class="row nav ">
+                            <div class="col-md-12 " style="text-align: center; ">
+                                <a href="mailto:fisksylvester@gmail.com "><i class="fas fa-envelope fa-1x "></i> fisksylvester@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 formCont ">
+                    <form id="defaultForm ">
+                        <div class="form-row ">
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Nome* " required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Cognome* " required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Numero di Telefono* " required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="email " class="form-control " placeholder="Email* " required>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Azienda* " required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Città* " required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <select class="form-control " style="color: #6c757d !important; " required>
+                                <option selected disabled>Prodotto*</option>
+                                <option>Networking</option>
+                                <option>Reti fisse e mobili</option>
+                            </select>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="text " class="form-control " placeholder="Nome Prodotto* " required>
+                            </div>
+                            <div class="form-group col-md-12 ">
+                                <textarea class="form-control " id="exampleFormControlTextarea1 " rows="2 " placeholder="Messaggio "></textarea>
+                            </div>
+                            <div class="form-group col-md-12 ">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck" style="color: white;;">
+                                              Ho letto l'informativa e autorizzo il trattamento dei dati personali per finalità ivi indicate
+                                            </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-4 ">
+                                <button type="submit " id="singup " class="btn btn-primary ">Invia</button>
+                            </div>
+                            <div class="col-md-8 capbox">
+                                <div id="CaptchaDiv"></div>
+                                <div class="capbox-inner">
+                                    Type the above number:<br>
+
+                                    <input type="hidden" id="txtCaptcha">
+                                    <input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row nav soci">
+            <div class="col-sm-12 socialPhone">
+                <a href="https://twitter.com/enetworkssrl "><i class="fab fa-twitter-square fa-3x" style="color: #1da1f2;"></i></a>
+                <a href="https://it-it.facebook.com/enetworkssrl "><i class="fab fa-facebook-square fa-3x" style="color: #1877f2;"></i></a>
+                <a href="https://instagram.com/enetworks_srl?igshid=1rmssn0b7bl7r "><i class="fab fa-instagram fa-3x" style="color: #e76d46;"></i></a>
+                <a href="https://it.linkedin.com/company/enetworks-srl"><i class="fab fa-linkedin fa-3x" style="color: #006699;"></i></a>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- fine footer -->
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+
+
+
+        var car;
+        $(document).ready(function() {
+            car = 0;
+        });
+
+        $(".carrello ").click(function() {
+            car = car + 1;
+            $('.carrellone').text(car);
+        });
+
+        $("#rete ").click(function() {
+            $("section ").show().filter(':not(.reti)').hide();
+        });
+
+        $("#sicurezza ").click(function() {
+            $("section ").show().filter(':not(.sicurezzA)').hide();
+        });
+
+        $("#servizio ").click(function() {
+            $("section ").show().filter(':not(.servizi)').hide();
+        });
+        $("#tutto ").click(function() {
+            $("section ").show().filter('.tutto').hide();
+        });
+
+
+
+
+
+
+        var quadrantItems = document.querySelectorAll('.quadrant__item');
+        var svgs = document.querySelectorAll('svg');
+        var cube = document.querySelector('.cube');
+        var closeButton = document.querySelector('.quadrant__item__content--close');
+        var isInside = false;
+
+        var tl = new TimelineLite({
+            paused: true
+        });
+        tl.timeScale(1.6);
+
+        tl.to('.cube', 0.4, {
+            rotation: 45,
+            width: '120px',
+            height: '120px',
+            ease: Expo.easeOut
+        }, 'first');
+        tl.to('.plus .plus-vertical', 0.3, {
+            height: '0',
+            backgroundColor: '#f45c41',
+            ease: Power1.easeIn
+        }, 'first');
+        tl.to('.plus .plus-horizontal', 0.3, {
+            width: '0',
+            backgroundColor: '#f45c41',
+            ease: Power1.easeIn
+        }, 'first');
+        tl.to('.cube', 0, {
+            backgroundColor: 'transparent'
+        });
+        tl.to(quadrantItems[0], 0.15, {
+            x: -5,
+            y: -5
+        }, 'seperate');
+        tl.to('.arrow-up', 0.2, {
+            opacity: 1,
+            y: 0
+        }, 'seperate+=0.2');
+        tl.to(quadrantItems[1], 0.15, {
+            x: 5,
+            y: -5
+        }, 'seperate');
+        tl.to('.arrow-right', 0.2, {
+            opacity: 1,
+            x: 0
+        }, 'seperate+=0.2');
+        tl.to(quadrantItems[3], 0.15, {
+            x: 5,
+            y: 5
+        }, 'seperate');
+        tl.to('.arrow-down', 0.2, {
+            opacity: 1,
+            y: 0
+        }, 'seperate+=0.2');
+        tl.to(quadrantItems[2], 0.15, {
+            x: -5,
+            y: 5
+        }, 'seperate');
+        tl.to('.arrow-left', 0.2, {
+            opacity: 1,
+            x: 0
+        }, 'seperate+=0.2');
+
+        cube.addEventListener('mouseenter', playTimeline);
+        cube.addEventListener('mouseleave', reverseTimeline);
+
+        function playTimeline(e) {
+            e.stopPropagation();
+            tl.play();
+        }
+
+        function reverseTimeline(e) {
+            e.stopPropagation();
+            tl.timeScale(1.8);
+            tl.reverse();
+        }
+
+
+        // Captcha Script
+
+        function checkform(theform) {
+            var why = "";
+
+            if (theform.CaptchaInput.value == "") {
+                why += "- Please Enter CAPTCHA Code.\n";
+            }
+            if (theform.CaptchaInput.value != "") {
+                if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+                    why += "- The CAPTCHA Code Does Not Match.\n";
+                }
+            }
+            if (why != "") {
+                alert(why);
+                return false;
+            }
+        }
+
+        var a = Math.ceil(Math.random() * 9) + '';
+        var b = Math.ceil(Math.random() * 9) + '';
+        var c = Math.ceil(Math.random() * 9) + '';
+        var d = Math.ceil(Math.random() * 9) + '';
+        var e = Math.ceil(Math.random() * 9) + '';
+
+        var code = a + b + c + d + e;
+        document.getElementById("txtCaptcha").value = code;
+        document.getElementById("CaptchaDiv").innerHTML = code;
+
+        // Validate input against the generated number
+        function ValidCaptcha() {
+            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+            if (str1 == str2) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Remove the spaces from the entered and generated code
+        function removeSpaces(string) {
+            return string.split(' ').join('');
+        }
+    </script>
+</body>
+
+</html>

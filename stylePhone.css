@@ -1,0 +1,100 @@
+@media (min-width: 350px) and (max-width: 500px) {
+    .slideHome {
+        height: 100px !important;
+        padding: 0% !important;
+        margin-top: 100px;
+    }
+    .carousel-indicators {
+        display: none !important;
+    }
+    .butt {
+        margin-top: 120px;
+    }
+    .carousel-inner {
+        height: 210px;
+    }
+    .titolo {
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+    .freccia {
+        margin-bottom: 20px;
+    }
+    .cover.chisiamo {
+        background: url("../images/aboutPhone.jpg") no-repeat center center;
+        background-size: cover;
+        max-height: 400px;
+    }
+    .part {
+        margin: 1%;
+        height: 200px;
+    }
+    .center10 {
+        width: 50% !important;
+    }
+    .center11 {
+        width: 50% !important;
+    }
+    .center45 {
+        width: 50% !important;
+    }
+    .bgSlider {
+        width: 100% !important;
+    }
+    .QapTcha {
+        width: 100% !important;
+    }
+    .xdd {
+        padding-right: 0px !important;
+        text-align: left;
+    }
+    .ff {
+        width: 85% !important;
+    }
+    .XD {
+        padding-left: 10%
+    }
+    .aasde {
+        padding: 5% !important;
+    }
+    .mappaf {
+        padding: 0% !important;
+        height: 400px !important;
+    }
+    .soc {
+        display: none !important;
+    }
+    .socialPhone {
+        display: block !important;
+    }
+    .nav.soci {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    .col-md-4.formCont {
+        max-height: 1000px !important;
+        margin-right: 15px;
+        margin-left: 15px;
+        max-width: 100%;
+    }
+    .cookie {
+        height: auto !important;
+    }
+    .col-md-8.capbox {
+        margin-bottom: 20px !important;
+    }
+    #navb {
+        width: 100%;
+    }
+    #selectItem {
+        margin-right: 0px;
+    }
+    .carousel-item.active {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+    .carousel-item {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+}

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+.body {
+    background-color: #009997;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+    align-content: center;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 150px;
+}
+
+.log {
+    width: 25px;
+}
+
+.row {
+    margin-top: 150px;
+}
+
+.descrizione {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.bottoni {
+    margin-top: 20px
+}
+
+.card-immag {
+    height: 203px;
+    padding: 10px;
+}
+
+.col-md-4 {
+    margin-top: 20px;
+}
+
+.XD {
+    margin: 0% !important;
+    padding: 0px;
+    text-align: center !important;
+    padding-left: 16%;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.col-md-6.bot {
+    padding-bottom: 10px;
+}
+
+.xdd {
+    padding-right: 140px;
+}
+
+.costo {
+    background-color: rgba(255, 68, 0, 0.781);
+    width: 80px;
+    margin-left: 80px;
+    border-radius: 20px;
+}
+
+.titolo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.prodotto {
+    text-align: left;
+}
+
+.testoC {
+    font-weight: bold;
+}
+
+.carrello {
+    color: white !important;
+}
+
+.container-social {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cube {
+    width: 60px;
+    height: 60px;
+    background: #f45c41;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.col-md-6.cont {
+    padding-top: 30px;
+}
+
+.plus-vertical,
+.plus-horizontal {
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.plus-vertical {
+    height: 50%;
+    width: 5px;
+}
+
+.plus-horizontal {
+    width: 50%;
+    height: 5px;
+}
+
+.quadrant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quadrant__item {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f45c41;
+    border-radius: 6px;
+    position: relative;
+}
+
+.quadrant__item__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-down,
+.arrow-left,
+.arrow-right,
+.arrow-up {
+    opacity: 0;
+}
+
+.arrow-up {
+    transform: translateY(10px);
+}
+
+.arrow-down {
+    transform: translateY(-10px);
+}
+
+.arrow-left {
+    transform: translateX(10px);
+}
+
+.arrow-right {
+    transform: translateX(-10px);
+}
+
+iframe {
+    border-radius: 15px;
+    border-color: rgba(221, 160, 221, 0);
+}
+
+.col-md-4.mappa {
+    border: solid rgba(0, 153, 150, 0.721);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100%;
+    max-height: 570px !important;
+}
+
+#posizione {
+    padding: 25px;
+    margin-left: 25px;
+}
+
+#orari {
+    background-color: rgba(0, 153, 150, 0.721);
+    border-radius: 15px;
+    padding-right: 3px;
+    padding-bottom: 15px;
+    padding-left: 3px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    color: white !important;
+}
+
+.col-md-4.formCont {
+    background-color: rgba(0, 153, 150, 0.721);
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 0px !important;
+    max-height: 570px;
+    padding-top: 15px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.63);
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.quadrant__item__content.linkedin {
+    left: 55%;
+}
+
+.quadrant__item__content.instagram {
+    width: 150px;
+    height: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.row.nav {
+    padding: 0px;
+    margin-top: 10px
+}
+
+.socialPhone {
+    display: none;
+}
+
+.ff {
+    width: 922px;
+    margin-right: 92px;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+.fa-phone {
+    color: white;
+}

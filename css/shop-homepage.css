@@ -1,0 +1,143 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 80px;
+    background-color: #009997;
+}
+
+.navbar {
+    transition: 500ms ease;
+    background-color: #ffffffc9;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar.scrolled {
+    background: #ffffff;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.log {
+    width: 25px;
+}
+
+.itemBlock {
+    display: inline-flex;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.itemBlock .card {
+    margin: 3px;
+}
+
+.hideMe {
+    display: none !important;
+}
+
+.navbar {
+    background-color: #ffffffc9;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 100px;
+}
+
+.filtro {
+    text-align: right !important;
+    transition-delay: 1s;
+    transition: width 5s, height 2s;
+    transition-duration: 2s;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.filtromax {
+    transition-delay: 1s;
+    transition: width 2s, height 2s;
+    transition-duration: 2s;
+    width: 400px !important;
+    height: 260px !important;
+}
+
+.mb-0 {
+    text-align: center;
+}
+
+.card-header:first-child {
+    border-bottom: 0 solid;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
+.card-immag {
+    width: 70%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    align-self: center;
+    padding: 10px;
+}
+
+.titolo {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.descrizione {
+    text-align: left !important;
+}
+
+.carousel.slideHome {
+    padding: 85px;
+    background-color: #009997;
+    max-height: 500px;
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding-top: 30px;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.mappa {
+    border: solid rgba(0, 153, 150, 0.721);
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#posizione {
+    padding: 25px;
+    margin-left: 25px;
+}
+
+#orari {
+    background-color: rgba(0, 153, 150, 0.721);
+    border-radius: 15px;
+    padding-right: 3px;
+    padding-bottom: 15px;
+    padding-left: 3px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.col-md-4.formCont {
+    background-color: rgba(0, 153, 150, 0.721);
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}

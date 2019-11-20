@@ -1,0 +1,59 @@
+/*****************/
+
+
+/** QapTcha CSS **/
+
+
+/*****************/
+
+.QapTcha {
+    float: left;
+    margin-top: 0px;
+    width: 252px;
+}
+
+.QapTcha .clr {
+    clear: both
+}
+
+.QapTcha .bgSlider {
+    width: 250px;
+    height: 38px;
+    border-radius: 15px;
+    float: left;
+    border: 1px #ffffff;
+    background-color: #ffffff;
+    -webkit-box-shadow: inset 10px 11px 57px -17px #000000;
+    -moz-box-shadow: inset 10px 11px 57px -17px #000000;
+    -o-box-shadow: inset 10px 11px 57px -17px #000000;
+    box-shadow: inset 10px 11px 57px -17px #000000;
+}
+
+.QapTcha .Slider {
+    width: 52px;
+    height: 37px;
+    border-radius: 15px;
+    background: transparent url('../images/bg_draggable_qaptcha.jpg') no-repeat;
+    cursor: e-resize;
+    position: relative;
+    top: 0;
+    left: 0
+}
+
+.QapTcha .TxtStatus {
+    width: 252px;
+    margin-top: 7px;
+    text-align: left;
+    color: #4e8b37;
+    font-family: Verdana;
+    font-size: 10px;
+    clear: both
+}
+
+.QapTcha .dropSuccess {
+    color: #4e8b37
+}
+
+.QapTcha .dropError {
+    color: #bb2828
+}
